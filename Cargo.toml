@@ -1,0 +1,14 @@
+[package]
+name = "hewa"
+version = "0.1.0"
+edition = "2021"
+authors = ["bwanamaina <johnmuhuhe@gmail.com>"]
+description = "Weather App"
+readme = "README.md"
+homepage = "https://bwanamaina.com/"
+repository = "https://github.com/bwanamaina/hewa.git/"
+keywords = ["weather", "cli", "rust"]
+
+
+[dependencies]
+structopt = "0.3.26"
