@@ -1,14 +1,22 @@
 [package]
 name = "hewa"
-version = "0.1.0"
 edition = "2021"
-authors = ["bwanamaina <johnmuhuhe@gmail.com>"]
-description = "Weather App"
+version = "0.1.0"
 readme = "README.md"
 homepage = "https://bwanamaina.com/"
+authors = ["bwanamaina <johnmuhuhe@gmail.com>"]
 repository = "https://github.com/bwanamaina/hewa.git/"
-keywords = ["weather", "cli", "rust"]
+keywords = ["weather", "cli", "rust", "openweathermap"]
+description = "CLI Weather App making using `openweathermap` API"
 
 
 [dependencies]
+serde = "1.0.136"
+term-table = "1.3.2"
 structopt = "0.3.26"
+exitfailure = "0.5.1"
+serde_json = "1.0.78"
+serde_derive = "1.0.136"
+dotenv_codegen = "0.15.0"
+tokio = { version = "1.15.0", features = ["full"]}
+reqwest = { version = "0.11.9", features = ["json"]}
